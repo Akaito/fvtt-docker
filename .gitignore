@@ -3,6 +3,10 @@ foundryvtt*.zip
 
 # IDE
 .vscode/
+*.vim
+*.swp
+*.suo
+*~
 
 # Docker Compose
 docker-compose.local.yaml

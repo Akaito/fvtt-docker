@@ -14,8 +14,10 @@ USER fvtt
 COPY --chown=fvtt run-server.sh /opt/foundryvtt
 RUN chmod +x /opt/foundryvtt/run-server.sh
 VOLUME /data/foundryvtt
-VOLUME /host
-VOLUME /opt/foundryvtt/resources/app
+#VOLUME /host
+#VOLUME /opt/foundryvtt/resources/app
 EXPOSE 30000
+
+COPY --chown=fvtt ./foundryvtt-11.313.zip /opt/foundryvtt/
 
 ENTRYPOINT /opt/foundryvtt/run-server.sh
