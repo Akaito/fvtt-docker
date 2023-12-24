@@ -1,5 +1,5 @@
 .PHONY: build
 
 build:
-	docker build --tag codesaru/fvtt:11.313 .
+	docker build --tag codesaru/fvtt:11.315 .
 
