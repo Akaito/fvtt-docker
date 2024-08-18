@@ -1,5 +1,11 @@
-.PHONY: build
+.PHONY: build12 build11 build10
 
-build:
-	docker build --tag codesaru/fvtt:11.315 .
+build12:
+	docker build --tag codesaru/fvtt:12.330 --tag codesaru/fvtt:12 --tag codesaru/fvtt:latest .
+
+build11:
+	docker build --tag codesaru/fvtt:11.315 --tag codesaru/fvtt11 .
+
+build10:
+	docker build --tag codesaru/fvtt:10.312 --tag codesaru/fvtt:10 v10
 
